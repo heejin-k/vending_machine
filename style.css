@@ -4,7 +4,7 @@
 font-family: 'Noto Sans KR', sans-serif;
 }
 /* 초기화 */
-p,li,ul,button,h2{
+body,p,li,ul,button,h2{
     margin: 0;
     padding: 0;
     
@@ -32,6 +32,7 @@ main {
     display: inline-block;
     width: 360px;
     box-sizing: border-box;
+    vertical-align: top;
 }
 
 .right{
@@ -40,8 +41,8 @@ main {
 
 .left{
     background-color: white;
-    padding: 31px 27px 28px;
-    height: 544px;
+    padding: 30px 27px 27px;
+    /* height: 544px; */
 }
 
 .cola{
@@ -143,9 +144,30 @@ main {
     border: 1px solid #BDBDBD;
     box-sizing: border-box;
     border-radius: 5px;
-    padding: 12px 18px 12px 12px;
+    padding: 12px 10px 12px 12px;
     box-sizing: border-box;
     
+}
+
+/* 스크롤바 전체 */
+.get-list-box::-webkit-scrollbar{
+    width: 4px;
+    height: 0;
+    background-color: transparent;
+}
+
+/* 스크롤 막대 */
+.get-list-box::-webkit-scrollbar-thumb{
+height: 79px;
+background-color: white;
+border: none;
+border-radius: 50px;
+}
+
+/* 스크롤 막대 외부 */
+.get-list-box::-webkit-scrollbar-track{
+    background-color: transparent;
+
 }
 
 .get-list{
@@ -223,6 +245,7 @@ main {
     border-radius: 5px;
     border:none;
     background: #EAE8FE;
+    box-sizing: border-box;
 }
 
 .get-cola {
@@ -240,7 +263,7 @@ margin-bottom: 13px;
 }
 
 .get-cola-box{
-    padding: 12px 18px 12px 12px;
+    padding: 12px 10px 12px 12px;
     width: 306px;
     height: 364px;
     background: #EAE8FE;
@@ -249,6 +272,28 @@ margin-bottom: 13px;
     border-radius: 5px;
     overflow: scroll;
     box-sizing: border-box;
+}
+
+/* 스크롤바 전체 */
+.get-cola-box::-webkit-scrollbar{
+    width: 4px;
+    height: 0;
+    background-color: transparent;
+}
+
+/* 스크롤 막대 */
+.get-cola-box::-webkit-scrollbar-thumb{
+    width: 4px;
+    height: 79px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+}
+
+/* 스크롤 막대 외부 */
+.get-cola-box::-webkit-scrollbar-track{
+    background-color: transparent;
+
 }
 
 .get-cola-list{
@@ -264,15 +309,36 @@ font-size: 9px;
 
 }
 
+
 .get-cola .cola-text{
     top: 14px;
 }
 
 .total {
-    margin-top: 6px;
-    font-weight: 500;
+margin-top: 6px;
+font-weight: 500;
 font-size: 12px;
 line-height: 20px;
 text-align: right;
 }
 
+@media screen and (max-width:400px) {
+    body {
+        background:white;
+    }
+    .logo{
+        width: 166px;
+    }
+    .right { margin: 0;}
+
+    .right {
+        padding-top: 0;
+    }
+    .left{
+        padding-bottom: 11px;
+    }
+
+    .money-box{
+        margin-bottom: 7px;
+    }
+}
