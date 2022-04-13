@@ -54,9 +54,15 @@ main {
     width: 94px;
     height: 130px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    border: 3px solid transparent;
     border-radius: 10px;
     text-align: center;
     box-sizing: border-box;
+
+}
+
+.cola:hover{
+    border:3px solid #6327FE;
 
 }
 .cola img{
@@ -321,8 +327,8 @@ font-size: 12px;
 line-height: 20px;
 text-align: right;
 }
-
-@media screen and (max-width:400px) {
+/* 미디어쿼리 */
+@media screen and (max-width:360px) {
     body {
         background:white;
     }
