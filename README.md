@@ -18,7 +18,7 @@
 
 - 모바일 버전
 
-![image](https://user-images.githubusercontent.com/54096506/163193055-ed931d62-b49f-4af7-872e-cfe44fd78813.png)
+![image](https://user-images.githubusercontent.com/54096506/163214923-5612bb31-3346-4a62-adfd-eac2ebd52e30.png)
 
 ## 기능 구현
 
