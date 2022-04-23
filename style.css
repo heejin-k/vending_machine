@@ -105,11 +105,11 @@ main {
     font-size: 14px;
     line-height: 20px;
     display: flex;
-    align-items: center;
     float: left;
     box-sizing: border-box;
     border-radius: 5px;
     border: none;
+    justify-content: space-between;
 }
 .return,.deposit {
     margin-bottom: 12px;
@@ -156,18 +156,20 @@ main {
 }
 
 /* 스크롤바 전체 */
+
+
 .get-list-box::-webkit-scrollbar{
-    width: 4px;
+    width: 10px;
     height: 0;
-    background-color: transparent;
+    background-color: transparent
 }
 
 /* 스크롤 막대 */
 .get-list-box::-webkit-scrollbar-thumb{
 height: 79px;
 background-color: white;
-border: none;
 border-radius: 50px;
+border: 3px solid #EAE8FE;
 }
 
 /* 스크롤 막대 외부 */
@@ -179,7 +181,7 @@ border-radius: 50px;
 .get-list{
     display: block;
     background-color: white;
-    width: 170px;
+    width: 100%;
     height: 46px;
     border-radius: 5px;
     margin-bottom: 6px;
@@ -189,11 +191,9 @@ border-radius: 50px;
 .cola-text{
     position: relative;
     display: inline;
-    text-align: center;
     font-size: 9px;
-    line-height: 10px;
-    top: 9px;
-    
+    line-height: 45px;
+    float: left;
 }
 
 .count{
@@ -243,8 +243,9 @@ border-radius: 50px;
 }
 
 .money {
+    display: block;
     padding: 6px 10px;
-    width: 306px;
+    width: auto;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
@@ -252,6 +253,11 @@ border-radius: 50px;
     border:none;
     background: #EAE8FE;
     box-sizing: border-box;
+    text-align: left;
+}
+
+.value{
+    float: right;
 }
 
 .get-cola {
@@ -282,7 +288,7 @@ margin-bottom: 13px;
 
 /* 스크롤바 전체 */
 .get-cola-box::-webkit-scrollbar{
-    width: 4px;
+    width: 10px;
     height: 0;
     background-color: transparent;
 }
@@ -292,7 +298,7 @@ margin-bottom: 13px;
     width: 4px;
     height: 79px;
     background-color: white;
-    border: none;
+    border: 3px solid #EAE8FE;
     border-radius: 50px;
 }
 
@@ -300,24 +306,6 @@ margin-bottom: 13px;
 .get-cola-box::-webkit-scrollbar-track{
     background-color: transparent;
 
-}
-
-.get-cola-list{
-padding: auto 18px;
-display: block;
-width: 276px;
-height: 46px;
-background-color: white;
-border-radius: 5px;
-margin-bottom: 6px;
-box-sizing: border-box;
-font-size: 9px;
-
-}
-
-
-.get-cola .cola-text{
-    top: 14px;
 }
 
 .total {
