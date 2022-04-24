@@ -10,13 +10,18 @@ body,p,li,ul,button,h2{
     
 }
 
+:root{
+    --main-bg-color:#e5ded1;
+    --main-point-color:#857357;
+}
+
 /* 디자인 */
 *{
     font-family:'Noto Sans KR';
     font-style: normal;
 }
 body{
-    background:#EAE8FE;
+    background: var(--main-bg-color);
 }
 main {
     text-align: center;
@@ -62,7 +67,7 @@ main {
 }
 
 .cola:hover{
-    border:3px solid #6327FE;
+    border:3px solid var(--main-point-color);
 
 }
 .cola img{
@@ -82,7 +87,7 @@ main {
 .price {
     width: 70px;
     text-align: center;
-    background: #6327FE;
+    background: var(--main-point-color);
     border-radius: 50px;
     font-weight: 500;
     font-size: 12px;
@@ -100,7 +105,7 @@ main {
     margin-bottom: 12px;
     padding: 6px 10px 7px;
     width: 200px;
-    background: #EAE8FE;
+    background: var(--main-bg-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
@@ -146,7 +151,7 @@ main {
     width: 200px;
     height: 106px;
     overflow: scroll;
-    background-color: #EAE8FE;
+    background-color: var(--main-bg-color);
     border: 1px solid #BDBDBD;
     box-sizing: border-box;
     border-radius: 5px;
@@ -169,7 +174,7 @@ main {
 height: 79px;
 background-color: white;
 border-radius: 50px;
-border: 3px solid #EAE8FE;
+border: 3px solid var(--main-bg-color);
 }
 
 /* 스크롤 막대 외부 */
@@ -216,7 +221,7 @@ border: 3px solid #EAE8FE;
 .get {
     width: 94px;
     padding: 43px 35px 44px;
-    background: #6327FE;
+    background: var(--main-point-color);
     border-radius: 5px;
     border: none;
     font-weight: 700;
@@ -251,7 +256,7 @@ border: 3px solid #EAE8FE;
     line-height: 20px;
     border-radius: 5px;
     border:none;
-    background: #EAE8FE;
+    background: var(--main-bg-color);
     box-sizing: border-box;
     text-align: left;
 }
@@ -278,7 +283,7 @@ margin-bottom: 13px;
     padding: 12px 10px 12px 12px;
     width: 306px;
     height: 364px;
-    background: #EAE8FE;
+    background: var(--main-bg-color);
     border: 1px solid #BDBDBD;
     box-sizing: border-box;
     border-radius: 5px;
@@ -298,7 +303,7 @@ margin-bottom: 13px;
     width: 4px;
     height: 79px;
     background-color: white;
-    border: 3px solid #EAE8FE;
+    border: 3px solid var(--main-bg-color);
     border-radius: 50px;
 }
 
