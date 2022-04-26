@@ -12,13 +12,13 @@
 
 ## UI 구현
 
-- pc 버전
+- pc
 
-![image](https://user-images.githubusercontent.com/54096506/163187729-eaaf3cc8-265e-42f1-b75e-2062bbdacb14.png)
+![image](https://user-images.githubusercontent.com/54096506/165288496-f7e90bb5-45b7-4ea5-96e7-af6e1f3b52a8.png)
 
-- 모바일 버전
+- mobile
 
-![image](https://user-images.githubusercontent.com/54096506/163214923-5612bb31-3346-4a62-adfd-eac2ebd52e30.png)
+![image](https://user-images.githubusercontent.com/54096506/165288624-7f93a8dc-952a-4c36-8341-a1ec7bd5334b.png)
 
 ## 기능 구현
 
@@ -45,17 +45,14 @@
 ## 배운 점
 
 - 섹션 제자리 찾기
-
-![화면 캡처 2022-04-13 215900](https://user-images.githubusercontent.com/54096506/163200119-1d2f00b3-dc68-419b-9c29-4f96928de595.png)
-섹션이 나란히 정렬되지않고, 어긋나는 상황이 발생했다. 여러가지 방법을 시도해도 꿈쩍하지 않았는데 둘 다 inline-block이라 이러한 현상이 발생하게 되었다.
-양쪽 섹션에 vertical-align : top 을 적용시켜주어 해결했다. 그외에 float를 이용하여 각각 섹션에 float:left;, float:right;를 적용하고 두 섹션의 부모요소의 넓이를 지정해주는 방법으로도 해결가능했다.
+  섹션이 나란히 정렬되지않고, 어긋나는 상황이 발생했다. 여러가지 방법을 시도해도 꿈쩍하지 않았는데 둘 다 inline-block이라 이러한 현상이 발생하게 되었다.
+  양쪽 섹션에 vertical-align : top 을 적용시켜주어 해결했다. 그외에 float를 이용하여 각각 섹션에 float:left;, float:right;를 적용하고 두 섹션의 부모요소의 넓이를 지정해주는 방법으로도 해결가능했다. + flex를 이용해도 가능할 것 같다.
 
 - scrollbar 스타일링 <br>
-
-가상요소를 사용하여 scrollbar 스타일링 하는 법을 처음 알게되었다. 가상요소 사용하는 방법 또한 익숙해 지게 연습해야겠다.<br>
-::-webkit-scrollbar -> 스크롤바 전체 <br>
-::-webkit-scrollbar-thumb -> 스크롤바(막대)<br>
-::-webkit-scrollbar-track -> 스크롤바 막대 외부<br>
+  가상요소를 사용하여 scrollbar 스타일링 하는 법을 처음 알게되었다. 가상요소 사용하는 방법 또한 익숙해 지게 연습해야겠다.<br>
+  ::-webkit-scrollbar -> 스크롤바 전체 <br>
+  ::-webkit-scrollbar-thumb -> 스크롤바(막대)<br>
+  ::-webkit-scrollbar-track -> 스크롤바 막대 외부<br>
 
 ## 페이지 링크
 
