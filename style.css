@@ -1,5 +1,15 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+/* @font-face {
+    font-family: "UhBeeDongKyung";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeDongKyung.woff")
+    format("woff");
+    font-weight: normal;
+    font-style: normal;
+} */
+
 .notosanskr * { 
 font-family: 'Noto Sans KR', sans-serif;
 }
@@ -26,10 +36,27 @@ body{
 main {
     text-align: center;
 }
-.logo{
+.logo,
+.logo object {
     display: block;
     width: 386px;
     margin: 0 auto;
+    }
+
+    .logo {
+    position: relative;
+    }
+
+    .logoname {
+    display: inline-block;
+    font-family: 'Cedarville Cursive', cursive;
+    position: absolute;
+    color: white;
+    font-size: 80px;
+    font-weight: lighter;
+    top: -85px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .left,.right{
@@ -50,8 +77,7 @@ main {
     /* height: 544px; */
 }
 
-.cola{
-    padding: 11px 11px 13px 9px;
+.coffee{
     margin-bottom: 12px;
     margin-left: 4px;
     /* 파그마상 간격이12px인데 양옆 박스쉐도우 총 8px고려 */
@@ -66,15 +92,28 @@ main {
 
 }
 
-.cola:hover{
+li.coffee.soldout{
+    position: relative;
+}
+
+.soldout::before{
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    content: url(./img/품절\ 표시.png);
+    z-index: 10;
+    
+}
+
+.coffee:hover{
     border:3px solid var(--main-point-color);
 
 }
-.cola img{
-    width: 36px;
+.coffee img{
+    width: 70px;
 }
 
-.cola p{
+.coffee p{
     margin-bottom:5px;
     font-weight: 500;
     font-size: 9px;
@@ -97,7 +136,7 @@ main {
     line-height: 100%;
 }
 
-.wrap-cola{
+.wrap-coffee{
     margin-bottom: 8px;
 }
 
@@ -193,7 +232,7 @@ border: 3px solid var(--main-bg-color);
     box-sizing: border-box;
 }
 
-.cola-text{
+.coffee-text{
     position: relative;
     display: inline;
     font-size: 9px;
@@ -234,9 +273,11 @@ border: 3px solid var(--main-bg-color);
 }
 
 .mini {
-    width: 18px;
+    width: 45px;
     float: left;
-    padding: 6px 10px 7px;
+    /* margin-top: 2px; */
+
+
 }
 
 .money-box{
@@ -265,21 +306,21 @@ border: 3px solid var(--main-bg-color);
     float: right;
 }
 
-.get-cola {
+.get-coffee {
     background-color: white;
     width: auto;
     padding: 25px 27px 26px;
 
 }
 
-.get-cola h2 {
+.get-coffee h2 {
     font-weight: 700;
 font-size: 14px;
 line-height: 20px;
 margin-bottom: 13px;
 }
 
-.get-cola-box{
+.get-coffee-box{
     padding: 12px 10px 12px 12px;
     width: 306px;
     height: 364px;
@@ -292,14 +333,14 @@ margin-bottom: 13px;
 }
 
 /* 스크롤바 전체 */
-.get-cola-box::-webkit-scrollbar{
+.get-coffee-box::-webkit-scrollbar{
     width: 10px;
     height: 0;
     background-color: transparent;
 }
 
 /* 스크롤 막대 */
-.get-cola-box::-webkit-scrollbar-thumb{
+.get-coffee-box::-webkit-scrollbar-thumb{
     width: 4px;
     height: 79px;
     background-color: white;
@@ -308,7 +349,7 @@ margin-bottom: 13px;
 }
 
 /* 스크롤 막대 외부 */
-.get-cola-box::-webkit-scrollbar-track{
+.get-coffee-box::-webkit-scrollbar-track{
     background-color: transparent;
 
 }
@@ -325,9 +366,18 @@ text-align: right;
     body {
         background:white;
     }
-    .logo{
+    .logo object{
         width: 166px;
     }
+    .logoname {
+        font-size: 40px;
+        font-weight: lighter;
+        top: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
     .right { margin: 0;}
 
     .right {
@@ -341,5 +391,11 @@ text-align: right;
 
     .money-box{
         margin-bottom: 7px;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .right{
+        margin-left: 0;
     }
 }
